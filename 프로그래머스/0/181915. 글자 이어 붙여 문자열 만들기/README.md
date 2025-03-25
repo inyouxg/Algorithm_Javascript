@@ -71,5 +71,23 @@
 <li>예제 2번의 <code>my_string</code>에서 인덱스 0, 1, 2, 3에 해당하는 글자는 각각 z, p, i, a이므로 <code>my_string</code>에서 <code>index_list</code>에 들어있는 원소에 해당하는 인덱스의 글자들은 각각 순서대로 p, i, z, z, a입니다. 따라서 "pizza"를 return 합니다.</li>
 </ul>
 
+<hr>
+
+### 학습 노트
+
+<p>배열을 순회하는 방법으로는 네가지가 존재.</p>
+<ul>
+        <li>for</li>
+        <li>for ... in</li>
+        <li>for ... of</li>
+        <li>forEach</li>
+</ul>
+<p>for ... in 은 배열 순환에서 적절하지 않다. -> 해당 배열 요소가 아닌 key 값을 가져오기 때문!</p>
+<code>for (const i in index_list) { str.push(alphabet_list[index_list[i]]); }</code> 와 같이 <code>index_list[i]</code>를 해주어야 함.
+<p>for ... of 이 배열 순환에 적절. key 뿐만 아니라 요소 값도 접근 가능.</p>
+<code>for (const idx of index_list) { str.push(alphabet_list[idx]); }</code> key 값에 접근할 때는 <code>arr.keys()</code>.
+
+
+<hr>
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
