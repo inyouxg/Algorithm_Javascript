@@ -68,5 +68,13 @@
 <li>예제 2번의 <code>number</code>는 78720646226947352489으로 각자리 숫자의 합은 101입니다. 101을 9로 나눈 나머지는 2이고, 실제로 78720646226947352489 = 9 × 8746738469660816943 + 2입니다. 따라서 2를 return 합니다.</li>
 </ul>
 
+<hr>
+
+### 학습 노트
+<p>javascript 에서는 문자열에 .length()나 .toUpperCase()와 같은 함수를 적용할 수 있다. </p>
+<p>원시 데이터 타입을 객체 데이터 타입처럼 사용할 수 있는 것 > 이유 : javascript 엔진이 원시 데이터 타입을 자동으로 래퍼 객체로 임시 변환 시켜준다.</p>
+따라서 split으로 문자열을 분리해줄 필요가 없으며, 바로 <code>for (var i of number){ sum += Number(i); }</code> 가 가능하다.
+
+<hr>
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
