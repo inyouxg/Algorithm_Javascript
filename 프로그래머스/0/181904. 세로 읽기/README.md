@@ -114,5 +114,14 @@
 <li>예제 2번의 <code>my_string</code>은 <code>m</code>이 1이므로 세로로 "programmers"를 적는 것과 같고 따라서 1열에 적힌 글자를 세로로 읽으면 programmers입니다. 따라서 "programmers"를 return 합니다.</li>
 </ul>
 
+<hr>
+
+### 학습 노트
+
+<p>다른 사람 풀이 : <code>return [...my_string].filter((_, i) => i % m === c - 1).join('');</code></p>
+<p>(_, i)는 배열의 요소는 무시하고 인덱스로만 filter 메서드를 사용하겠다는 뜻. </p>
+<p>자바스크립트는 문자열에 length나 인덱스 요소를 사용할 수 있지만 배열 메소드를 사용할 수는 없다. 따라서 filter()를 사용하려면 [...my_string] 배열 전환 필수</p>
+
+<hr>
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
