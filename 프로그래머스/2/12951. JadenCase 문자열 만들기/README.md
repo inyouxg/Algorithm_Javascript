@@ -55,6 +55,24 @@
       </table>
 <hr>
 
+### 학습 노트
+<p>기존 코드 반례 : 첫 문자가 공백일 경우 오류가 남. 공백을 먼저 처리하고 다른 케이스를 처리해야 함.</p>
+<ul>
+        <li> 연속 공백 </li>
+        <li> 숫자 시작 </li>
+        <li> 대문자 섞인 문자열</li>
+        <li> 맨 앞 / 맨 뒤 공백</li>
+</ul>
+
+<p>대안 풀이</p>
+<pre><code>
+function solution(s) {
+  return s.split(" ")
+    .map(v => v.charAt(0).toUpperCase() + v.substring(1).toLowerCase())
+    .join(" ");
+}
+</code></pre>
+
 <p>※ 공지 - 2022년 1월 14일 제한 조건과 테스트 케이스가 추가되었습니다.</p>
 
 
