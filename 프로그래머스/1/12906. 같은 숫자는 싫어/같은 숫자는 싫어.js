@@ -5,8 +5,6 @@ function solution(arr) {
         if(arr[i] !== answer[answer.length-1]) {
             answer.push(arr[i]);
         }
-
-        before = arr[i];
     }
 
     return answer;
